@@ -1,3 +1,11 @@
+#include <Arduino.h>
+#include "it8951.h"
+#include "pic.h"
+
+extern IT8951DevInfo gstI80DevInfo;
+extern uint8_t* gpFrameBuf;
+extern uint32_t gulImgBufAddr;
+
 void setup(void)
 {
     Serial.begin(115200);
